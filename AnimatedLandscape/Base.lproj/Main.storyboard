@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LXK-UM-fVv">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0gw-BL-9IL">
+            <objects>
+                <viewController id="LXK-UM-fVv" customClass="ViewController" customModule="RageTweet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4L8-CT-qjr">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7Z-XU-RGl" customClass="SkyView" customModule="RageTweet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" red="0.52549019607843139" green="0.79607843137254897" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQQ-wA-Wvj" customClass="Moon" customModule="RageTweet" customModuleProvider="target">
+                                <rect key="frame" x="-170" y="0.0" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nri-ek-Dam" customClass="Sun" customModule="RageTweet" customModuleProvider="target">
+                                <rect key="frame" x="-170" y="0.0" width="120" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="HUB-jC-9b5"/>
+                                    <constraint firstAttribute="width" secondItem="Nri-ek-Dam" secondAttribute="height" multiplier="1:1" id="cq7-7n-7YB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9Q-gR-pau" customClass="Mountains" customModule="RageTweet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="667" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house.gif" translatesAutoresizingMaskIntoConstraints="NO" id="RW9-8c-4UH" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="317" y="145" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Rhb-Sm-XXX"/>
+                                    <constraint firstAttribute="width" secondItem="RW9-8c-4UH" secondAttribute="height" multiplier="1:1" id="qs1-2V-OKN"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rQQ-wA-Wvj" firstAttribute="top" secondItem="v3E-UY-yBs" secondAttribute="top" id="H8q-eS-EKZ"/>
+                            <constraint firstItem="a7Z-XU-RGl" firstAttribute="leading" secondItem="4L8-CT-qjr" secondAttribute="leading" id="LNl-7M-6dI"/>
+                            <constraint firstItem="b9Q-gR-pau" firstAttribute="height" secondItem="a7Z-XU-RGl" secondAttribute="height" id="Oi6-MC-F58"/>
+                            <constraint firstItem="b9Q-gR-pau" firstAttribute="width" secondItem="a7Z-XU-RGl" secondAttribute="width" id="QlL-bq-Z8f"/>
+                            <constraint firstItem="Nri-ek-Dam" firstAttribute="top" secondItem="v3E-UY-yBs" secondAttribute="top" id="RQk-v0-vbE"/>
+                            <constraint firstItem="a7Z-XU-RGl" firstAttribute="trailing" secondItem="4L8-CT-qjr" secondAttribute="trailing" id="TTo-DT-V5n"/>
+                            <constraint firstItem="b9Q-gR-pau" firstAttribute="centerX" secondItem="a7Z-XU-RGl" secondAttribute="centerX" id="b18-Zi-THc"/>
+                            <constraint firstItem="b9Q-gR-pau" firstAttribute="centerY" secondItem="a7Z-XU-RGl" secondAttribute="centerY" constant="50" id="dKJ-cv-ZyF"/>
+                            <constraint firstItem="rQQ-wA-Wvj" firstAttribute="height" secondItem="Nri-ek-Dam" secondAttribute="height" id="fQw-qo-zdC"/>
+                            <constraint firstItem="a7Z-XU-RGl" firstAttribute="bottom" secondItem="4L8-CT-qjr" secondAttribute="bottom" id="iiz-DG-rVq"/>
+                            <constraint firstItem="a7Z-XU-RGl" firstAttribute="top" secondItem="4L8-CT-qjr" secondAttribute="top" id="ix6-5G-Mb4"/>
+                            <constraint firstItem="rQQ-wA-Wvj" firstAttribute="width" secondItem="Nri-ek-Dam" secondAttribute="width" id="mWs-RU-MSJ"/>
+                            <constraint firstItem="v3E-UY-yBs" firstAttribute="bottom" secondItem="RW9-8c-4UH" secondAttribute="bottom" constant="80" id="ubp-ah-q1J"/>
+                            <constraint firstItem="v3E-UY-yBs" firstAttribute="trailing" secondItem="RW9-8c-4UH" secondAttribute="trailing" constant="200" id="x0o-d9-DjC"/>
+                            <constraint firstItem="rQQ-wA-Wvj" firstAttribute="leading" secondItem="v3E-UY-yBs" secondAttribute="leading" constant="-170" id="xM5-2w-G7A"/>
+                            <constraint firstItem="Nri-ek-Dam" firstAttribute="leading" secondItem="v3E-UY-yBs" secondAttribute="leading" constant="-170" id="yaf-iQ-TA8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v3E-UY-yBs"/>
+                    </view>
+                    <connections>
+                        <outlet property="houseImage" destination="RW9-8c-4UH" id="YGX-gt-vcy"/>
+                        <outlet property="moonView" destination="rQQ-wA-Wvj" id="QXD-cH-7qq"/>
+                        <outlet property="mountainsView" destination="b9Q-gR-pau" id="yNl-Kd-yVT"/>
+                        <outlet property="skyView" destination="a7Z-XU-RGl" id="0Ac-AS-dbo"/>
+                        <outlet property="sunView" destination="Nri-ek-Dam" id="tBB-7w-vHy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lY-XP-Clk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8.1521739130434785" y="-5.7971014492753632"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.gif" width="624" height="530"/>
+    </resources>
+</document>
