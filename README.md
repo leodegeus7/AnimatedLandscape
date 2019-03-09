@@ -1,4 +1,4 @@
-# AnimatedLandscape
+# Animated Landscape
 An app to show my Core Graphics and animations skills 
 
 ![](https://i.imgur.com/YvlIxJ7.png)
